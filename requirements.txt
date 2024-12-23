@@ -4,3 +4,4 @@ SQLAlchemy==2.0.23
 pyjwt
 passlib[bcrypt]
 werkzeug
+loguru

@@ -11,6 +11,7 @@ class Base(DeclarativeBase):
 
 
 # mysql+mysqldb://<user>:<password>@<host>[:<port>]/<dbname>
+# echo - True:输出sqlalchemy日志 False:不输出sqlalchemy日志
 engine = create_engine(
     f"{MYSQL_DIALECT}://{MYSQL_USER}:{MYSQL_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}?charset=utf8mb4",
     echo=True
